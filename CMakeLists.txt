@@ -16,3 +16,7 @@ add_subdirectory(external/glfw)
 
 # Связываем библиотеку GLFW с вашим проектом
 target_link_libraries(${PROJECT_NAME} glfw)
+
+add_subdirectory(external/glad)
+
+target_link_libraries(${PROJECT_NAME} glad)
